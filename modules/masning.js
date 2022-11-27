@@ -3,8 +3,8 @@ import * as constants from './constants.js';
 
 let state = {
     loopId: null,
-    ms: 100,
     n: 0,
+    glitchProb: 0.1,
 };
 
 let elements = {};
@@ -25,7 +25,9 @@ function updateView() {
 
 
 function loop() {
-    fugels.decr(state.n);
+    // TODO: make more efficient by sampling from binomial distribution
+    let delta = [...Array(state.n).keys()].filter(()=>Math.random()>state.glitchProb).length
+    fugels.decr(delta);
 }
 
 const attach = () => {

@@ -1,3 +1,3 @@
-const ms = 200;
+const ms = 150;
 
 export { ms }

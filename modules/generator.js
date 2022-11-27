@@ -5,6 +5,7 @@ import * as constants from './constants.js';
 let state = {
     loopId: null,
     n: 0,
+    glitchProb: 0.1,
 };
 
 let elements = {};
@@ -24,7 +25,9 @@ function updateView() {
 }
 
 function loop() {
-    fugels.incr(state.n);
+    // TODO: make more efficient by sampling from binomial distribution
+    let delta = [...Array(state.n).keys()].filter(()=>Math.random()>state.glitchProb).length
+    fugels.incr(delta);
 }
 
 function detach() {
