@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="interface.css" />
 </head>
@@ -20,35 +21,28 @@ _____|_|_______________________________
             </pre>
         </div>
     </div>
-
-    <div id="left" class="column">
-        <div id="generatorDiv" class="component">
-            <h2>Fögel generator</h2>
-            <button id="generatorIncrButton">Tilføj generator</button>
-            <button id="generatorDetachButton">x</button><br>
-            <span>Antal generatorer:</span><span id="generatorCounterSpan">0</span><br>
+    <div id="columnOne" class="column">
+        <div id="gamesDiv" class="component">
+            <h2>Games</h2>
+            <ul>
+                <li>
+                    <a href="./games/fugels/">Fugels</a>
+                </li>
+            </ul>
         </div>
     </div>
 
-    <div id="middle" class="column">
-        <div id="masningDiv" class="component">
-            <h2>Masning</h2>
-            <button id="masningIncrButton">Tilføj maser</button><br>
-            <span>Antal masere:</span><span id="masningCounterSpan">0</span><br>
-        </div>
-    </div>
-
-    <div id="right" class="column">
-        <div id="fugelsDiv" class="component">
-            <h2>Fögels</h2>
-            <span>Antal fögels:</span><span id="fugelCounterSpan">0</span><br>
-            <span>Maste fögels:</span><span id="fugelMastSpan">0</span><br>
+    <div id="columnTwo" class="column">
+        <div id="gamesDiv" class="component">
+            <h2>Scores</h2>
+            <p>
+                Under construction...
+            </p>
         </div>
     </div>
 
     <!-- <script type="module" src="main.js"></script> -->
     <script type="module" src="main.js"></script>
-
 </body>
 
 </html>
