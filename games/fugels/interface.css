@@ -1,0 +1,43 @@
+.column {
+    /* background-color: darksalmon; */
+    float: left;
+    width: 300px;
+}
+
+.component {
+    padding: 0.5em;
+}
+
+h2 {
+    border-bottom: 1px black solid;
+    font-size: 100%
+}
+
+#top {
+    color: rgb(0, 255, 204);
+    background-color: rgb(0, 0, 0);
+}
+
+/* #left {
+    background-color: rgb(253, 245, 229);
+}
+
+#middle {
+    background-color: rgb(244, 229, 201);
+}
+
+#right {
+    background-color: wheat;
+} */
+
+#fugelsDiv {
+    display: none;
+}
+
+#generatorDiv {
+    display: none;
+}
+
+#masningDiv {
+    display: none;
+}
